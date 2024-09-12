@@ -130,16 +130,6 @@ def get_CIFAR100_loaders_test(img_size_H = 32, img_size_W = 32, train = False, b
     test_loader = DataLoader(cifar_test, batch_size = bs, shuffle=False)
     return  test_loader
 
-def get_tiny_loaders_test(img_size_H = 64, img_size_W = 64):
-	norm_mean = 0
-	norm_var = 1
-	transform_test = transforms.Compose([
-		transforms.Resize((img_size_H, img_size_W)),
-        transforms.ToTensor(),
-        transforms.Normalize(norm_mean, norm_var)])
-	test_loader = LoadTinyImageNetValidationData(mainDir = "//data4//cam18027//GameTheory//data//archive//tiny-imagenet-200", imgSize = 64, batchSize = 8) #, shuffle = transform_test)
-	return test_loader
-
 
 #Convert an image dataloader (I) to a repeat encoding dataloader (E)
 def DataLoaderIToDataLoaderRE(dataLoaderI, length):

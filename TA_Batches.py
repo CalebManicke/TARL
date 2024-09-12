@@ -1,8 +1,6 @@
 # Import files from Bit and ViT folders
-import sys
-sys.path.insert(0, '/data4/cam18027/TriangleAttack/TransferImageNetV4/TransferImageNetV4')
-import BigTransferModels
-from TransformerModels import VisionTransformer, CONFIGS
+import TransferImageNetV4.BigTransferModels
+from TransferImageNetV4.TransformerModels import VisionTransformer, CONFIGS
 
 import json
 import torch

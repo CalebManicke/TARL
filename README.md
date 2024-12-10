@@ -1,5 +1,8 @@
 # TARL
-This repository contains code corresponding to "TARL: A Highly Efficient Black-Box Adversarial Attack with Reinforcement Learning" 
+Official repository for ["Theoretical Corrections and the Leveraging of Reinforcement Learning to Enhance Triangle Attack"](https://arxiv.org/abs/2411.12071).
+
+# Abstract 
+Adversarial examples represent a serious issue for the application of machine learning models in many sensitive domains. For generating adversarial examples, decision based black-box attacks are one of the most practical techniques as they only require query access to the model. One of the most recently proposed state-of-the-art decision based black-box attacks is Triangle Attack (TA). In this paper, we offer a high-level description of TA and explain potential theoretical limitations. We then propose a new decision based black-box attack, Triangle Attack with Reinforcement Learning (TARL). Our new attack addresses the limits of TA by leveraging reinforcement learning. This creates an attack that can achieve similar, if not better, attack accuracy than TA with half as many queries on state-of-the-art classifiers and defenses across ImageNet and CIFAR-10.
 
 # Repo Overview 
 All attack pipelines were created by modifying the [official Triangle Attack repository](https://github.com/xiaosen-wang/TA). Code from this repository is also provided here to run the original Triangle Attack. There are two main attack pipelines featured in this repository:
